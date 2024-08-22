@@ -13,6 +13,18 @@ public class Card : MonoBehaviour
 
     #region Methods
 
+public void SetPlayable(bool isPlayable)
+    {
+        if (_cardButton != null)
+        {
+            _cardButton.interactable = isPlayable;
+        }
+            Color cardColor = isPlayable ? Color.white : Color.gray;
+            GetComponent<Image>().color = cardColor;
+            _nameText.color = isPlayable ? Color.black : Color.gray;
+            _descriptionText.color = isPlayable ? Color.black : Color.gray;
+    }
+
     public void SetUp(CardScript data)
     {
         CardData = data;

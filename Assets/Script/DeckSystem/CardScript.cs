@@ -21,9 +21,9 @@ public class CardScript : ScriptableObject
 
 public enum CardElement
 {
-   Bio,
-   Xeno,
-   Mech
+    Bio,
+    Xeno,
+    Mech
 }
 
 public enum CardEffectType
